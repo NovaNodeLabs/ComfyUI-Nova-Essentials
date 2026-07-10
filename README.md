@@ -25,8 +25,20 @@ Restart ComfyUI once after installation. After that, use **Reload CSV Dropdown**
 - **Nova Secret Sauce**
 - **Nova Overlay Text Pro**
 - **Nova Prompt Logger**
+- **Nova Image Compare**
 
 Old v3/v4/v5/v8-v12 node aliases and duplicate switch nodes are intentionally not registered.
+
+## Nova Image Compare
+
+Connect a before image to `image_a` and an after image to `image_b`, then run the workflow once. The node preview provides four comparison modes:
+
+- **Wipe** — drag directly across the preview to reveal either image.
+- **Side by Side** — display both images next to each other.
+- **Overlay** — drag across the preview to adjust image B opacity.
+- **Difference** — display the absolute pixel difference between the images.
+
+The node also displays both source resolutions. If the images have different dimensions, the difference view resizes image B to match image A for comparison.
 
 ## Recommended prompt flow
 
@@ -70,6 +82,7 @@ See `workflows/README.md`. Drag any JSON workflow onto ComfyUI.
 - The character templates are generic original adult archetypes, not a celebrity database.
 - Adult glamour pose prompts explicitly describe adult subjects and remain non-explicit.
 - No extra Python packages are required beyond a normal ComfyUI installation.
+- Nova Image Compare is an independent implementation inspired by the familiar before/after comparison workflow used by image tools.
 
 ## License
 
