@@ -1,0 +1,516 @@
+{
+  "last_node_id": 6,
+  "last_link_id": 6,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "NovaLoadStylesCSVPro",
+      "pos": [
+        20,
+        20
+      ],
+      "size": [
+        380,
+        640
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "positive prompt",
+          "type": "STRING",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "negative prompt",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "selected style",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "info",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 3
+        },
+        {
+          "name": "selected index",
+          "type": "INT",
+          "links": [],
+          "slot_index": 4
+        },
+        {
+          "name": "overlay text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 5
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "NovaLoadStylesCSVPro"
+      },
+      "widgets_values": [
+        "csv/styles/visual_styles.csv",
+        "Manual",
+        "0001 | Anime/Clean Cel Shading",
+        "",
+        "All",
+        "",
+        0,
+        true,
+        1,
+        ", ",
+        "",
+        "",
+        "",
+        false,
+        0,
+        "Exact Search Trigger First",
+        true,
+        12,
+        true,
+        "Clean Style Name",
+        "STYLE: ",
+        140,
+        "Clean Style Name",
+        true,
+        "None",
+        20
+      ],
+      "title": "Visual Style"
+    },
+    {
+      "id": 2,
+      "type": "NovaLoadStylesCSVPro",
+      "pos": [
+        440,
+        20
+      ],
+      "size": [
+        380,
+        640
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "positive prompt",
+          "type": "STRING",
+          "links": [
+            2
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "negative prompt",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "selected style",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "info",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 3
+        },
+        {
+          "name": "selected index",
+          "type": "INT",
+          "links": [],
+          "slot_index": 4
+        },
+        {
+          "name": "overlay text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 5
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "NovaLoadStylesCSVPro"
+      },
+      "widgets_values": [
+        "csv/clothing/outfit_styles.csv",
+        "Manual",
+        "0001 | Aesthetic/Quiet Luxury",
+        "",
+        "All",
+        "",
+        0,
+        true,
+        1,
+        ", ",
+        "",
+        "",
+        "",
+        false,
+        0,
+        "Off",
+        true,
+        12,
+        true,
+        "Clean Style Name",
+        "STYLE: ",
+        140,
+        "Clean Style Name",
+        true,
+        "None",
+        20
+      ],
+      "title": "Second Style / Clothing / Pose"
+    },
+    {
+      "id": 3,
+      "type": "NovaLoadCharactersCSVPro",
+      "pos": [
+        860,
+        20
+      ],
+      "size": [
+        380,
+        640
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "character prompt",
+          "type": "STRING",
+          "links": [
+            3
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "negative prompt",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "selected character",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "info",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 3
+        },
+        {
+          "name": "selected index",
+          "type": "INT",
+          "links": [],
+          "slot_index": 4
+        },
+        {
+          "name": "overlay text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 5
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "NovaLoadCharactersCSVPro"
+      },
+      "widgets_values": [
+        "csv/characters/character_templates.csv",
+        "Manual",
+        "0001 | Adult Female/Elegant Fashion Editor",
+        "",
+        "All",
+        "",
+        0,
+        true,
+        1,
+        ", ",
+        "",
+        "",
+        "",
+        false,
+        0,
+        "Off",
+        true,
+        12,
+        true,
+        "Clean Style Name",
+        "CHAR: ",
+        140,
+        "Clean Character Name",
+        true,
+        "None",
+        20
+      ],
+      "title": "Character"
+    },
+    {
+      "id": 4,
+      "type": "NovaTextPrompt",
+      "pos": [
+        20,
+        720
+      ],
+      "size": [
+        520,
+        220
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            4
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "NovaTextPrompt"
+      },
+      "widgets_values": [
+        "cinematic portrait in a refined interior, natural confident expression",
+        "",
+        "",
+        true
+      ],
+      "title": "Manual Prompt"
+    },
+    {
+      "id": 5,
+      "type": "NovaPromptBuilderPreEnhance",
+      "pos": [
+        600,
+        720
+      ],
+      "size": [
+        540,
+        480
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "style_prompt",
+          "type": "STRING",
+          "link": 1
+        },
+        {
+          "name": "style_prompt_2",
+          "type": "STRING",
+          "link": 2
+        },
+        {
+          "name": "character_prompt",
+          "type": "STRING",
+          "link": 3
+        },
+        {
+          "name": "manual_prompt",
+          "type": "STRING",
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pre_enhance_prompt",
+          "type": "STRING",
+          "links": [
+            5
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "debug_status",
+          "type": "STRING",
+          "links": [
+            6
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "overlay_text",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "overlay_enabled",
+          "type": "BOOLEAN",
+          "links": [],
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "NovaPromptBuilderPreEnhance"
+      },
+      "widgets_values": [
+        true,
+        true,
+        true,
+        "style1_style2_character_prompt",
+        "Visual style / art direction:",
+        "Custom",
+        "Character reference:",
+        "normal",
+        "normal",
+        "normal",
+        ", ",
+        "",
+        "Secondary style / pose / clothing:",
+        "",
+        ""
+      ],
+      "title": "Combine Everything Before One Enhancer"
+    },
+    {
+      "id": 6,
+      "type": "NovaPromptPreview",
+      "pos": [
+        1200,
+        720
+      ],
+      "size": [
+        500,
+        260
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 5
+        },
+        {
+          "name": "debug_status",
+          "type": "STRING",
+          "link": 6
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "NovaPromptPreview"
+      },
+      "widgets_values": [
+        "Pre-Enhancer Prompt"
+      ],
+      "title": "Preview \u2014 Connect Prompt Output To Your Enhancer"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      5,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      2,
+      0,
+      5,
+      1,
+      "STRING"
+    ],
+    [
+      3,
+      3,
+      0,
+      5,
+      2,
+      "STRING"
+    ],
+    [
+      4,
+      4,
+      0,
+      5,
+      3,
+      "STRING"
+    ],
+    [
+      5,
+      5,
+      0,
+      6,
+      0,
+      "STRING"
+    ],
+    [
+      6,
+      5,
+      1,
+      6,
+      1,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "CSV Sources",
+      "bounding": [
+        0,
+        0,
+        1260,
+        680
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Build Prompt First \u2014 Then Use One Enhancer",
+      "bounding": [
+        0,
+        690,
+        1740,
+        530
+      ],
+      "color": "#8a6d3b",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.85,
+      "offset": [
+        40,
+        60
+      ]
+    }
+  },
+  "version": 0.4
+}
